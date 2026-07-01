@@ -1,0 +1,12 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    /* Option 1 ke liye ye line use karo: */
+    background-color: #f7fdf9;
+    /* Agar Option 2 chahiye to: background-color: #f8fafc; */
+    /* Agar Option 3 chahiye to: background-color: #f9fafb; */
+    @apply text-gray-900 antialiased;
+}
