@@ -1,0 +1,16 @@
+{
+  "name": "medirelief",
+  "version": "1.0.0",
+  "description": "MedRelief - Medicine Donation Platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "install-all": "npm install --prefix client && npm install --prefix server",
+    "start": "concurrently \"npm run start --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
